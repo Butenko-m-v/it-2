@@ -22,10 +22,11 @@ class Stack_N_plus_1_N7 {
             stack1.push(j);
             System.out.println("1stack: " + j + ", ");
         }
-        int a = 0;
-        for (int n = l; n > 0; n--) {
+        int a;
+        for (int n = 0; n < l; n++) {
+            a = 0;
             stack2 = stack1;
-            for (int i = 0; (n - i) > 0; i++) {
+            for (int i = 0; (l - n - i) > 0; i++) {
                 a = stack2.pop();
             }
             stack.push(a);
@@ -33,4 +34,3 @@ class Stack_N_plus_1_N7 {
         }
     }
 }
-

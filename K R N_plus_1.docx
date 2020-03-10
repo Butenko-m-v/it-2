@@ -8,9 +8,9 @@ class Stack_N_plus_1_N7 {
         Stack<Integer> stack = new Stack<>();
         Stack<Integer> stack1 = new Stack<>();
         int l;
-        System.out.println("Êîëè÷åñòâî ýëåìåíòîâ:");
+        System.out.println("Kolichestvo elementov:");
         l = in.nextInt();
-        System.out.println("Ýëåìåíòû:");
+        System.out.println("Elementy:");
         for (int i = 0; i < l; i++) {
             int min = -100;
             int max = 100;
@@ -22,8 +22,8 @@ class Stack_N_plus_1_N7 {
             System.out.println("1stack: " + j + ", ");
         }
         int a = 0;
-        for (int n = l; n > 0; n--) {
-            for (int i = 0; (l - i) > (l + 1); i++) {
+        for (int n = 0; n < l; n++) {
+            for (int i = 0; (l - i) > 0; i++) {
                 a = stack.pop();
             }
             stack1.push(a);
@@ -31,4 +31,3 @@ class Stack_N_plus_1_N7 {
         }
     }
 }
-
